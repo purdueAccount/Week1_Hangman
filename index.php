@@ -3,20 +3,20 @@
 
 <head>
 	<title>Hangman</title>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 	
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-    <!-- description and keywords -->
-    <meta name="description" content="Hangman, the simple guessing game enjoyed by children of all ages." />
-    <meta name="keywords" content="hangman, game, search, word, english, language, fun" />
+  <!-- description and keywords -->
+  <meta name="description" content="Hangman, the simple guessing game enjoyed by children of all ages." />
+  <meta name="keywords" content="hangman, game, search, word, English, language, fun" />
 	
-    <!-- external document - links and scripts -->
-    <link href="/css/adjust.css" rel="stylesheet" type="text/css" />
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="/js/script.js" type="text/javascript"></script>
+  <!-- external document - links and scripts -->
+  <link href="/css/adjust.css" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="/js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -26,12 +26,13 @@
 </header>
 
 <main>
-	<h1>Hangman</h1>
+  <h1>Hangman</h1>
+  <p>Making Changes</p>
 </main>
 
 <footer>
-	<!-- JS Libraries -->
-	<script src="/js/libs/lib.js"></script>
+  <!-- JS Libraries -->
+  <script src="/js/libs/lib.js"></script>
 </footer>
 
 </body>
