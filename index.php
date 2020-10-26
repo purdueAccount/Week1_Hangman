@@ -18,6 +18,16 @@
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
+<?php
+  /* connect to database and get word list */
+  include './inc/init.php';
+  /* select a random word from the list */
+  $sql = "SELECT `word` FROM `hangman` ORDER BY RAND() LIMIT 1";
+  $query = mysqli_query($db, $sql);
+  $fetch = mysqli_fetch_assoc($query);
+  $word = $fetch['word'];
+?>
+
 <body>
 
 <header>
@@ -25,44 +35,30 @@
 </header>
 
 <!-- Start Hangman -->
-<main class="container-786">
+<main class="container">
+  
   <h1 class="text-center">Hangman</h1>
   
-  <!-- TEMP BEGIN -->
-  <div>Guess: <span>0</span> of 6</div>
-  <!-- TEMP END -->
+  <img id='image' src="./img/0.png" />
   
-  <p>
-    <img width="50%" src="./img/0.png"/>
-  </p>
-  <p>Guess the word?</p>
-  <p>_ _The work to be guessed goes here_ _</p>
+  <p class="text-center">Guess the word?</p>
+  <p id="wordSpotLight" class="text-center pad-bot">_ _The word to be guessed goes here_ _</p>
   
-  <p>
-    <div id="keyboard"></div>
-  </p>
+  <div class="object-center">
+    <div id="keyboard" class="text-center"></div>
+  </div>
   
-  <button class="btn" onclick="reset();">Reset</button>
+  <div class="object-center">
+    <button class="btn-wide" onclick="reset();">Reset</button>
+  </div>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  <div class="pad-bot"></div>
 </main>
 <!-- End Hangman -->
 
 <footer>
   <!-- JS Libraries -->
+  <div id="word"><?php echo $word; ?></div>
   <script src="./js/hangman.js" type="text/javascript"></script>
 </footer>
 
